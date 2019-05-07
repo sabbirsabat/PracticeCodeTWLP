@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: FROM ELEMENT CHECKBOX</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW--> 
+
+<form action="" method="" name="myfrom">
+	 <table>
+
+	 	<tr>
+	 		<td><input type="text" name="t1" onchange="doCal(this.from, this.name)"/></td>
+	 	</tr> 
+	 	<tr>
+	 		<td><input type="checkbox" name="chbox" onclick="doCal(this.from, this.name)"/></td>
+	 	</tr> 
+	 	<tr>
+	 		<td><input type="text" name="result" onchange="doCal(this.from, this.name)"/></td>
+	 	</tr> 
+	 	<tr>
+	 		<td><input type="reset" name="Refresh"></td>
+	 	</tr> 
+
+	 </table>
+
+ </form>
+ 
+	<script type="text/javaScript">	
+
+		function doCal(from, pfield){
+			if (pfield =="result") {
+				if (from.chbox.checked) {
+					from.t1.value = math.sqrt(from.result.value);
+			 } else {
+				from.t1.value = from.result.value/2;
+			}
+		} else {
+			if (from.chbox.checked) {
+				from.result.value = from.t1.value * from.t1.value;
+			} else {
+				from.result.value = from.t1.value*2;
+			}
+		}
+	}
+		
+
+	// video file open failed. please convert after practice again.		
+     
+
+    </script>
+ 
+	
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+	
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

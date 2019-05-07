@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: MATH OBJECT-I ,II, III</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW--> 
+	<form name="frm">
+		<table>
+
+			<caption>EXAMPLE OF DIFFERENT METHOD AND PROPERTIES OF MATH OBJECT</caption>
+
+			<tr>
+				<td>Input Box:</td>
+				<td><input type="text" name="getvalue"/></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="ABSOLUTE" onclick="calculate(1)"/> </td>
+				<td><input type="button" value="ROUND" onclick="calculate(2)"/> </td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="SINE" onclick="calculate(3)"/> </td>
+				<td><input type="button" value="COSINE" onclick="calculate(4)"/> </td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="TANGENT" onclick="calculate(5)"/> </td>
+				<td><input type="button" value="LOG" onclick="calculate(6)"/> </td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="FLOOR" onclick="calculate(7)"/> </td>
+				<td><input type="button" value="CEIL" onclick="calculate(8)"/> </td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="SQUARE ROOT" onclick="calculate(9)"/> </td>
+				<td><input type="button" value="RANDOM" onclick="calculate(10)"/> </td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="MAX" onclick="calculate(11)"/> </td>
+				<td><input type="button" value="MIN" onclick="calculate(12)"/> </td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="E" onclick="calculate(13)"/> </td>
+				<td><input type="button" value="PI" onclick="calculate(14)"/> </td>
+			</tr>
+
+			<tr>
+				<td>Result Box:</td>
+				<td><input type="text" name="showresult"/></td>
+			</tr>
+
+		</table>
+	</form>
+
+	<script type="text/javaScript">
+		function calculate(process){
+			with(document.frm)
+			switch(process){
+				case 1:
+				showresult.value = Math.abs(getvalue.value);
+				break;
+
+				case 2:
+				showresult.value = Math.round(getvalue.value);
+				break;
+				
+				case 3:
+				showresult.value = Math.sin(convDegreee(getvalue.value));
+				break;
+
+				case 4:
+				showresult.value = Math.cos(convDegreee(getvalue.value));
+				break;
+
+				case 5:
+				showresult.value = Math.tan(convDegreee(getvalue.value));
+				break;
+
+				case 6:
+				showresult.value = Math.log(convDegreee(getvalue.value));
+				break;
+
+				case 7:
+				showresult.value = Math.floor(getvalue.value);
+				break;
+
+				case 8:
+				showresult.value = Math.ceil(getvalue.value);
+				break;
+
+				case 9:
+				showresult.value = Math.sqrt(convDegreee(getvalue.value));
+				break;
+
+				case 10:
+				showresult.value = Math.random();
+				break;
+
+				case 11:
+				alert(Math.max(getvalue.value, prompt('Enter number','0'))+' is greater the number');
+				break;
+
+				case 12:
+				alert(Math.min(getvalue.value, prompt('Enter number','0'))+' is smaller the number');
+				break;
+
+				case 13:
+				showresult.value = Math.E;
+				break;
+
+				case 14:
+				showresult.value = Math.PI;
+				break;
+
+				
+			}
+		}
+
+		function convDegreee(x){
+			return x*22/7/180;
+		}
+
+    </script>
+ 
+	
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: MAKE A CLOCK</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW-->
+<div>
+	<span id="hour"></span>
+	<span id="minute"></span>
+	<span id="second"></span>
+</div>
+
+	<script>
+
+	function clock(){	
+		var date= new Date();
+
+		var hour   = date.getHours();
+		var minute = date.getMinutes();
+		var second = date.getSeconds();
+
+		document.getElementById("hour").innerHTML=hour;
+		document.getElementById("minute").innerHTML=minute;
+		document.getElementById("second").innerHTML=second;
+	}
+
+	 setInterval(clock,1000);
+
+
+
+   </script>
+	
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,6 @@
+*{margin: 0;padding: 0;outline: 0}
+body{font-family: Consolas; font-size: 18px; color: #fff;line-height: 40px;}
+.content{background: #333333;width: 800px;margin: 0 auto;}
+.maincontent{background: #000;margin: 10px;min-height: 500px;padding:5px 10px; line-height: 25px;}
+.header,.footer{font-family: Calibri (Body); text-align: center;background: #FF7E00;padding: 5px;}
+.maincontent p{color: #F6B284; line-height: 40px;}

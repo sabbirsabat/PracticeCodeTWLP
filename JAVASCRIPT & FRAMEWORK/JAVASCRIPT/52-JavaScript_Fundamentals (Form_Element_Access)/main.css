@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    color: white;
+    text-shadow: 2px 1px 4px black;
+    box-shadow: inset 0px 1px 12px 0px black;
+    color: white;
+}
+body{font-family: Consolas; font-size: 18px; color: #000;line-height: 40px;}
+.content {
+    background: #186b58;
+    width: 800px;
+    margin: 0 auto;
+}
+.maincontent{background: #333333;margin: 10px;min-height: 500px;padding:5px 10px; line-height: 25px;}
+.header, .footer {
+    font-family: Consolas;
+    text-align: center;
+    background: #d74e4e;
+    padding: 5px;
+}
+.maincontent p {
+    color: #4dff00;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 0 0 black;
+    background-color: #0f1312;
+}
+.maincontentex{ color: #000000; }
+
+button ,input[type="reset"]{
+    padding: 2px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: tomato;
+}
+table {
+    width: 279px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 31px solid #fffafa05;
+}
+input[type="text"], input[type="password"],input[type="email"]{
+    width: 200px;
+    height: 25px;
+    padding: 5px 8px;
+    font-family: Consolas;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #186b58;
+}
+input[type="button"]  {
+    width: 100px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #d8d8d8;
+    font-style: normal;
+    background: #a439c78c;
+    font-weight: bold;
+    font-size: small;
+}
+#showValue{
+    width: 200px;
+    height: 200px;
+    padding: 5px 8px;
+    font-family: Consolas;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #186b58;}

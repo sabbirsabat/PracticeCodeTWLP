@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: OWN STRING METHOD</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW-->
+
+	<script>
+
+/*
+		function revMe(s){
+			return s.split("").reverse().join("");
+		}
+		var x="A,B,C,D";
+		var rv=revMe(x);
+		document.write(rv);
+*/
+		String.prototype.revMe=function(){
+			var s="";
+			var i=this.length;
+			while(i>0){
+				s+=this.substring(i-1,i);
+				i--;
+			}
+			return s;
+		}
+		var x="A,B,C,D,E,F,G,H,I,J,K,L";
+		document.write(x.revMe());
+
+
+
+	</script>
+
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

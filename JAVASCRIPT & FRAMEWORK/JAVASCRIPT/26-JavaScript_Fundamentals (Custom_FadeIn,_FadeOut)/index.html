@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: CUSTOM FadeIn, FadeOut</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW-->
+<div>
+	<button onclick="fadeOut()">Start</button>
+
+	<img src="Tulips.jpg" id="myimg">
+</div>
+
+	<script type="text/javaScript">
+		var element  = document.getElementById("myimg");
+		var duration = 1000;
+		var hidtime  = 1000;
+		var showtime = 1000;
+		function setOpacity(value){
+			element.style.opacity=value;
+
+		}
+
+		function fadeOut(){
+			for (i = 0; i<=1; i+= 0.01) {
+				setTimeout("setOpacity("+(1-i)+")", i*duration);
+			}
+			setTimeout("fadeIn()",(duration+hidtime));
+		}
+
+		function fadeIn(){
+			for (i = 0; i<=1; i+=0.01) {
+				setTimeout("setOpacity("+1+")",i*duration);
+			}
+			setTimeout("fadeOut()",(duration+showtime));
+		}
+
+
+   </script>
+	
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

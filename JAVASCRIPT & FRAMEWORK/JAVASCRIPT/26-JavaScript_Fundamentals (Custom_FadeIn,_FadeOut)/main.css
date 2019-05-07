@@ -1,0 +1,7 @@
+*{margin: 0;padding: 0;outline: 0}
+body{font-family: Consolas; font-size: 18px; color: #000;line-height: 40px;}
+.content{background: #000000;width: 1065px;margin: 0 auto;}
+.maincontent{background: #333333;margin: 10px;min-height: 500px;padding:5px 10px; line-height: 25px;}
+.header,.footer{font-family: Consolas; text-align: center;background: #9CD74E;padding: 5px;}
+.maincontent p{color: #9CD74E; line-height: 40px;}
+button{padding: 2px 10px; font-size:20px; cursor:pointer; margin-bottom: 5px;}

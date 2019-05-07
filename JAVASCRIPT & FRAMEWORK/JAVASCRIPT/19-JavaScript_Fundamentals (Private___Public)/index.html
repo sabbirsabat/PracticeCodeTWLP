@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT  FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: PRIVATE METHODS & PROPERTIES</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW-->
+
+	<script>
+
+		function totalNum(a){ 
+		    //Private	                  
+			x=20;		         
+			total=function(){
+				return x+a;
+			};
+
+			//Public
+			this.result=function(){
+				this.sum=total();
+				return "Result is "+this.sum;
+
+			}
+
+		}
+
+		var tn= new totalNum(10);
+		console.log(tn.result());
+		
+	</script>
+
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

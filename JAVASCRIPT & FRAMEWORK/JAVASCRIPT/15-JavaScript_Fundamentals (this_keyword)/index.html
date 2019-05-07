@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT  FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: THIS KEYWORD</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW-->
+	<div id="Sabbir" onclick="liveproject(this)">Click Here</div>
+	<hr/>
+
+	<script>
+		function liveproject(){
+			var a=200;
+			this.x=300;
+			this.y=400;
+			this.z=function(){
+				return this.x+this.y;
+			}
+		}
+		var lp= new liveproject();
+		document.write(lp.z());
+		
+	</script>
+
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT  FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: PROTOTYPE (I)</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW-->
+
+	<script>
+
+		function totalNum(a,b){
+			this.x=a;
+			this.y=b;
+			this.sum=function(){
+				return this.x+this.y;
+			}
+		}
+		var tn= new totalNum(10,5);
+		console.log(tn.toString());
+		
+	</script>
+
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

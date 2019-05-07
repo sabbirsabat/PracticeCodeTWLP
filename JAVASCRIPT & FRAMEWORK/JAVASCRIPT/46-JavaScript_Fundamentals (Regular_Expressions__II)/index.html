@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: REGULAR EXPRESSIONS-II</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW--> 
+
+	
+<!--*1// <button  onclick="myreg()">Search</button>  -->
+	     <button  onclick="myreg()">Replace</button> 
+
+<!--*1//  <div id="show"></div>  --->
+	     <div id="show">My Name Is Sabbir</div>
+
+
+	<script type="text/javaScript">	
+	
+//*1//	function myreg() { 
+	
+//		var str = "Training With Live project";
+//		var sr  = str.search(/Project/i);
+//		document.getElementById("show").innerHTML = sr;
+//	}
+
+function myreg() { 
+	
+		var str   = document.getElementById("show").innerHTML
+		var input =str.replace("Sabbir","Sabat");
+		document.getElementById("show").innerHTML = input;
+	}
+
+
+    </script>
+ 
+	
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

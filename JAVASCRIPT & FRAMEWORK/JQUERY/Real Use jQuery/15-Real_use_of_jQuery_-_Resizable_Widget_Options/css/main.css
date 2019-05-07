@@ -1,0 +1,101 @@
+ body{font-family:Consolas;}
+
+.phpcoding{width: 1000px;
+	margin: 0 auto;
+	background:"#ddd";
+}
+.headeroption, .footeroption {
+    background: #009688;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.headeroption h2, .footeroption h2 {
+    margin: 0;
+    text-shadow: 2px 2px 5px black;
+    font-size: 30px;
+}
+.maincontent {
+    min-height: 400px;
+    padding: 40px;
+    background: #333333;
+    border: 10px solid #000000;
+    color: #fff;
+}
+p {margin: 0} 
+
+.para {
+    width: 820px;
+    min-height: 400px;
+    background: #0303035e;
+    border: 2px solid #000;
+    margin-top: 10px;
+    position: relative;
+    padding: 30px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 238px;
+    padding: 5px;
+    background: #000000;
+    color: #fff;
+}
+select{font-size: 18px;
+    padding: 2px 5px;
+    width: 250px;
+}
+
+button, input[type="submit"] {
+    background: #2196F3;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-shadow: 3px 3px 6px 1px #191a1b;
+    cursor: pointer;		   
+}
+
+#myform {
+    background: tomato;
+    width: 725px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    line-height: 35px;
+}
+.error_form{
+    color: #000000; 
+    font-size: 15px;
+}
+#gotoup{
+    background:url("img/up.png")no-repeat scroll 0 0;
+    bottom:10px; 
+    right: 10px;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.menustyle {
+    width: 220px;
+}
+
+.ui-menu .ui-menu-item {
+    border: 1px solid #070707;
+    background: #000000;
+    color: #fffbf6;
+    background-color: #2196F3;
+    text-shadow: 0px 1px 1px black;
+    padding: 5px;
+}
+#slider {
+    background: #b52f2f;
+    width: 200px;
+}
+
+#liveimg{
+    position:center;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: FROM VALIDATION PART-III</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW--> 
+
+<form name="myfrom" method="post">
+	 <table>
+
+	 	<tr>
+	 		<td>Name:</td>
+	 		<td><input type="text" name="name"/></td>
+	 	</tr> 
+
+	 	<tr>
+	 		<td>Email:</td>
+	 		<td><input type="text" name="email"/></td>
+	 	</tr>
+
+	 	<tr>
+	 		<td>Telephone:</td>
+	 		<td><input type="text" name="telephone"/><br/>
+	 			<input type="checkbox" name="notCall" onclick="enableDisable(t)"/>Please do not call me.
+	 		</td>
+	 	</tr>
+
+	 	<tr>
+	 		<td>What can we help you with?</td>
+	 		<td> 
+	 			<select name="subject" value= "">
+	 				<option>Select One </option>
+		 			<option>Customar Service</option>
+		 			<option>Question</option>
+		 			<option>Comments</option>
+		 			<option>Others</option>
+	 			</select>
+	 		</td>
+	 	</tr>
+
+	 	<tr>
+	 		<td>Comment:</td>
+	 		<td><input type="text" name="comment"/></td> 
+	 	</tr> 
+
+	 	<tr>
+	 		<td></td>
+	 		<td>
+	 			<input type="submit" name="submit" value="Submit"/>
+	 		    <input type="reset" name="reset" value="Refresh"/>
+	 		</td>
+	 	</tr> 
+
+	 	<tr>
+	 		<td></td>
+	 		<td>
+	 			<div id="state"></div>
+	 		</td>
+	 	</tr> 
+
+	 </table>
+
+ </form>
+ 
+	<script type="text/javaScript">	
+
+		function validateFrom(){
+			var name 		= document.myfrom.name;
+			var email 		= document.myfrom.email;
+			var telephone 	= document.myfrom.telephone;
+			var notCall 	= document.myfrom.notCall;
+			var subject 	= document.myfrom.subject;
+			var comment 	= document.myfrom.comment; 
+	
+			if (name.value == "") {
+				document.getElementById("state").innerHTML = "Please Enter Your Name...";
+				return false;
+	    } 
+
+	    if (email.value == "") {
+				document.getElementById("state").innerHTML = "Please Enter Your Email...";
+				return false;
+
+	}
+
+		
+     
+    </script>
+ 
+	
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+	
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

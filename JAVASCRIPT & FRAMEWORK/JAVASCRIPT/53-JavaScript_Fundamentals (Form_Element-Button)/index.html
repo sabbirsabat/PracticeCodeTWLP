@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: FROM ELEMENT BUTTON</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW--> 
+
+<form action="" method="" name="myfrom">
+	 <table>
+	 	<tr>
+	 		<td><input type="text" name="inputbox" value=""/></td>
+	 		<td><input type="button" value="Click" name="button" onclick="testResult()"/></td>
+	 	</tr> 
+	 </table>
+ </form>
+ 
+	<script type="text/javaScript">	
+
+		function testResult(from){
+			var testvar = myfrom.inputbox.value;
+			if(testvar == ""){
+				alert("Please Type Something...");
+			}else{
+				alert("You Typed... "+testvar);
+			}
+
+		}
+     
+
+    </script>
+ 
+	
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+	
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

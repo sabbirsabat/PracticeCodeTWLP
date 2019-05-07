@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JavaScript Fundamental")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: OBJECT</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW-->	
+
+	<script>
+		/*
+		var myname= new String ("Mahamudul Hasan Sabbir");
+		var mynum= new Number (125868);
+		document.write(typeof(mynum));
+		*/
+
+		var person={
+			firstname:"Sabbir ",
+			lastname:"Sabat",
+			age:30,
+			func:function(){
+				return this.firstname + this.lastname;
+			}
+		}
+		document.write(person.age);
+
+
+	</script>
+
+<!-- AUTHOR CODE END NOW-->		
+
+		</div>
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: MAKE A COUNTDOWN</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW-->
+
+	<script>
+
+
+    var countdown;
+    var countdownNumber;
+
+		function countdownInit() {
+			countdownNumber=12;
+			countdownTrigger();
+		}
+
+		function countdownTrigger() {
+			if (countdownNumber>0) {
+				countdownNumber--;
+				document.getElementById('show').innerHTML=countdownNumber;
+				if(countdownNumber>0){
+					countdown=setTimeout("countdownTrigger()",1000);
+				}
+		    }
+		}
+
+		function countdownClear() {
+		    clearTimeout(countdown)
+		document.getElementById("show").innerHTML="The timeout has been cleared ";
+		}
+
+	</script>
+
+	<div>
+	<input type="button" value="Start Countdown" onclick="countdownInit()"/>
+	<input type="button" value="Stop Countdown" onclick="countdownClear()"/>
+    </div>
+    <div id="show"></div>
+	
+
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

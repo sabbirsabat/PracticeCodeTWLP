@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script>document.write("JAVASCRIPT FUNDAMENTAL")</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<hr>
+			<p>SUBJECT: SET TIME OUT_CLEAR TIME OUT</p>
+			<hr>
+			<br/>
+
+<!-- AUTHOR CODE START NOW-->
+
+	<script>
+//setTimeout()
+//clearTimeout()
+//--------------------------------
+
+    //setTimeout()
+/*
+		var timeout;
+		function timeoutTrigger() {
+			document.getElementById("show").innerHTML="The timeout has been triggerd...after 3 sec...";
+		}
+
+		function timeInit() {
+			timeout=setTimeout("timeoutTrigger()",3000);
+			document.getElementById('show').innerHTML="The timeout has been started...";
+		}
+
+*/
+
+    //clearTimeout()
+
+    var timeout;
+		function timeoutTrigger() {
+			document.getElementById("show").innerHTML="The timeout has been triggerd...after 3 sec...";
+		}
+
+		function timeoutInit() {
+			timeout=setTimeout("timeoutTrigger()",3000);
+			document.getElementById('show').innerHTML="The timeout has been started...";
+		}
+
+		function timeoutClear() {
+		    clearTimeout(timeout)
+			document.getElementById("show").innerHTML="The timeout has been cleared ";
+		}
+
+	</script>
+
+	<div>
+		<input type="button" value="Test Timeout"  onclick=" timeoutInit()"/>
+		<input type="button" value="Clear Timeout"  onclick="timeoutClear()"/>
+	</div>
+	<div id="show"></div>
+
+<!-- AUTHOR CODE END NOW-->		 
+
+		</div>
+
+		<div class="footer">
+			<h2><script>document.write("&copy;Training With Live Project");</script></h2>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.3
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Dec 10, 2018 at 07:20 AM
+- Server version: 10.1.35-MariaDB
+- PHP Version: 7.2.9
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="velvee" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="customers">
+                CREATE TABLE `customers` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `firstName` varchar(255) DEFAULT NULL,
+                  `lastName` varchar(255) DEFAULT NULL,
+                  `address` varchar(255) DEFAULT NULL,
+                  `email` varchar(255) DEFAULT NULL,
+                  `city` varchar(255) DEFAULT NULL,
+                  `division` varchar(255) DEFAULT NULL,
+                  `zipcode` varchar(255) DEFAULT NULL,
+                  `age` int(11) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'velvee'
+    -->
+    <database name="velvee">
+        <!-- Table customers -->
+        <table name="customers">
+            <column name="id">1</column>
+            <column name="firstName">Al</column>
+            <column name="lastName">Amin</column>
+            <column name="address">House 2 lane 9</column>
+            <column name="email">amin@gamil.com</column>
+            <column name="city">Comilla</column>
+            <column name="division">Chittagong</column>
+            <column name="zipcode">1422</column>
+            <column name="age">30</column>
+        </table>
+        <table name="customers">
+            <column name="id">11</column>
+            <column name="firstName">Amitav</column>
+            <column name="lastName">Reza</column>
+            <column name="address">House 2 lane 9</column>
+            <column name="email">amitav@gamil.com</column>
+            <column name="city">Dhaka</column>
+            <column name="division">Dhaka</column>
+            <column name="zipcode">1236</column>
+            <column name="age">18</column>
+        </table>
+        <table name="customers">
+            <column name="id">6</column>
+            <column name="firstName">Badul</column>
+            <column name="lastName">Khan</column>
+            <column name="address">House 3 lane 3</column>
+            <column name="email">badul@gamil.com</column>
+            <column name="city">Lalmonirhat</column>
+            <column name="division">Rangpur</column>
+            <column name="zipcode">1256</column>
+            <column name="age">35</column>
+        </table>
+        <table name="customers">
+            <column name="id">4</column>
+            <column name="firstName">MM</column>
+            <column name="lastName">Faisal</column>
+            <column name="address">House 6 lane 2</column>
+            <column name="email">faisal@gamil.com</column>
+            <column name="city">Moulvibazar</column>
+            <column name="division">Sylhet</column>
+            <column name="zipcode">1006</column>
+            <column name="age">25</column>
+        </table>
+        <table name="customers">
+            <column name="id">2</column>
+            <column name="firstName">Jabed</column>
+            <column name="lastName">Hasan</column>
+            <column name="address">House 1 lane 22</column>
+            <column name="email">hasan@gamil.com</column>
+            <column name="city">Gajipur</column>
+            <column name="division">Dhaka</column>
+            <column name="zipcode">1236</column>
+            <column name="age">40</column>
+        </table>
+        <table name="customers">
+            <column name="id">8</column>
+            <column name="firstName">Shah</column>
+            <column name="lastName">Jamal</column>
+            <column name="address">House 2 lane 8</column>
+            <column name="email">jamal@gamil.com</column>
+            <column name="city">Rajshahi</column>
+            <column name="division">Rajshahi</column>
+            <column name="zipcode">1244</column>
+            <column name="age">42</column>
+        </table>
+        <table name="customers">
+            <column name="id">5</column>
+            <column name="firstName">Kobir</column>
+            <column name="lastName">Alom</column>
+            <column name="address">House 9 lane 18</column>
+            <column name="email">kobir@gamil.com</column>
+            <column name="city">Habiganj</column>
+            <column name="division">Sylhet</column>
+            <column name="zipcode">1000</column>
+            <column name="age">18</column>
+        </table>
+        <table name="customers">
+            <column name="id">7</column>
+            <column name="firstName">Mizan</column>
+            <column name="lastName">Khan</column>
+            <column name="address">House 9 lane 16</column>
+            <column name="email">mizan@gamil.com</column>
+            <column name="city">Kurigram</column>
+            <column name="division">Rangpur</column>
+            <column name="zipcode">1256</column>
+            <column name="age">38</column>
+        </table>
+        <table name="customers">
+            <column name="id">12</column>
+            <column name="firstName">Nazim</column>
+            <column name="lastName">Ullah</column>
+            <column name="address">House 6 lane 2</column>
+            <column name="email">nazim@gamil.com</column>
+            <column name="city">Bhola</column>
+            <column name="division">Borisal</column>
+            <column name="zipcode">7922</column>
+            <column name="age">22</column>
+        </table>
+        <table name="customers">
+            <column name="id">10</column>
+            <column name="firstName">Rahat</column>
+            <column name="lastName">Hasan</column>
+            <column name="address">House 4 lane 18</column>
+            <column name="email">Rahat@gamil.com</column>
+            <column name="city">Netrokona</column>
+            <column name="division">Mymenshingh</column>
+            <column name="zipcode">8522</column>
+            <column name="age">26</column>
+        </table>
+        <table name="customers">
+            <column name="id">3</column>
+            <column name="firstName">Rashedul</column>
+            <column name="lastName">Islam</column>
+            <column name="address">House 8 lane 20</column>
+            <column name="email">rashedul@gamil.com</column>
+            <column name="city">Dhaka</column>
+            <column name="division">Dhaka</column>
+            <column name="zipcode">1236</column>
+            <column name="age">20</column>
+        </table>
+        <table name="customers">
+            <column name="id">9</column>
+            <column name="firstName">Sabbir</column>
+            <column name="lastName">Sabat</column>
+            <column name="address">House 10 lane 3</column>
+            <column name="email">sabbirsabat@gamil.com</column>
+            <column name="city">Madaripur</column>
+            <column name="division">Dhaka</column>
+            <column name="zipcode">3255</column>
+            <column name="age">24</column>
+        </table>
+        <table name="customers">
+            <column name="id">13</column>
+            <column name="firstName">Tanvir</column>
+            <column name="lastName">Rifat</column>
+            <column name="address">House 9 lane 18</column>
+            <column name="email">tanvir@gamil.com</column>
+            <column name="city">Kistia</column>
+            <column name="division">Kulna</column>
+            <column name="zipcode">2599</column>
+            <column name="age">26</column>
+        </table>
+    </database>
+</pma_xml_export>
